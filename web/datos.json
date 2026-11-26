@@ -1,1 +1,50 @@
-{"fuente":"Exportación sanitizada de aula_casos (pendiente)","periodo":"Pruebas del proyecto","actualizado":null,"datos_ficticios":true,"casos":[]}
+{
+  "fuente": "Exportación manual sanitizada de aula_casos",
+  "periodo": "Casos incluidos en la exportación del estudiante",
+  "actualizado": "2026-11-26T06:24:56.875390+00:00",
+  "datos_ficticios": true,
+  "casos": [
+    {
+      "caso_id": "AULA-136595024",
+      "estado": "vencido",
+      "version": 1,
+      "total_mxn": 390.0
+    },
+    {
+      "caso_id": "AULA-136595025",
+      "estado": "aprobado_simulado",
+      "version": 1,
+      "total_mxn": 390.0
+    },
+    {
+      "caso_id": "AULA-136595035",
+      "estado": "rechazado",
+      "version": 1,
+      "total_mxn": 28.0
+    },
+    {
+      "caso_id": "AULA-136595041",
+      "estado": "pendiente_aprobacion",
+      "version": 1,
+      "total_mxn": 150.0
+    },
+    {
+      "caso_id": "AULA-136595044",
+      "estado": "pendiente_aprobacion",
+      "version": 1,
+      "total_mxn": 94.0
+    },
+    {
+      "caso_id": "AULA-136595045",
+      "estado": "pendiente_aprobacion",
+      "version": 1,
+      "total_mxn": 390.0
+    },
+    {
+      "caso_id": "AULA-136595046",
+      "estado": "pendiente_aprobacion",
+      "version": 1,
+      "total_mxn": 94.0
+    }
+  ]
+}
