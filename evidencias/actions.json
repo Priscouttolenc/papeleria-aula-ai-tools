@@ -1,0 +1,9 @@
+{
+  "prueba": "Bloqueo real de despliegue por dato inválido",
+  "ejecucion_exitosa_inicial": "https://github.com/Priscouttolenc/papeleria-aula-ai-tools/actions/runs/45767072357",
+  "ejecucion_bloqueada": "https://github.com/Priscouttolenc/papeleria-aula-ai-tools/actions/runs/45767457393",
+  "resultado_bloqueo": "Validación fallida; publicación skipped",
+  "dato_invalido": "datos_ficticios=false",
+  "correccion": "datos_ficticios=true",
+  "ejecucion_recuperacion": "https://github.com/Priscouttolenc/papeleria-aula-ai-tools/actions/runs/45767527740"
+}
