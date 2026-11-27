@@ -12,3 +12,10 @@
 
 Los archivos .env.example son una referencia, no un cargador automático de n8n Cloud. Las versiones importadas pueden requerir ajustar opciones en la interfaz. Las credenciales y servicios de prueba tienen límites y pueden vencer.
 
+
+## Inicio, parada y versiones observadas
+Node.js22 es la versión fijada para CI. n8n Cloud: versión de paquete no recuperada; versiones de nodos en workflow.json. Gateway usa gpt-5-mini; los registros medidos muestran gpt-5-mini-2025-08-07. ElevenLabs: español y voz Eric. No inferir versión de n8n a partir del aviso de migración.
+
+Inicio: publicar un solo workflow de Telegram y, por separado, la API de voz. Enviar /nuevo y consultar el folio; no pulsar Execute para un receptor ya publicado. Parada: More actions junto a Published → Unpublish. Despublicar la API detiene consultas de voz; puede mantenerse la web estática como evidencia. Antes de evaluar, verificar que los servicios y las cuotas estén disponibles.
+
+Error unknown column: comparar columnas y tipos con datos/diccionario.md. Chat ID indefinido: referenciar Telegram Trigger en lugar de suponer que el modelo conserva message. Error de contrato: revisar folio, JSON y catálogo antes de corregir; nunca omitir validación. Presupuesto agotado: observar estado guardado y saldo, sin ampliar límites automáticamente. Voz sin respuesta: revisar dominio permitido, Origin, URL de producción y Header Auth; no exponer la clave en capturas. Cambiar una clave requiere entrada personal de la titular.
