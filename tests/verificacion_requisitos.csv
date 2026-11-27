@@ -3,7 +3,7 @@ id,requisito,paginas_guia,estado,evidencia,accion_o_limite
 02,Inicio fin y caso_id compartido,2–4,Cumple,"Telegram, contratos y API de voz.",Se conserva el folio entre canales y registros.
 03,Tres KPI con fórmula unidad periodo y fuente,2 y 5,Cumple,"Informe, sección 2; web/datos.json.",Métricas de la exportación; no ventas ni ahorro medido.
 04,Datos ficticios y alcance de simulación,1–2 y 8,Cumple,Respuestas Telegram y sitio.,Conexiones reales; operaciones empresariales simuladas.
-05,Orquestador y cuatro especialistas distintos,3,Parcial,Flujos y logs de los cuatro modelos.,Roles operativos; presupuesto y manejo integral de fallas incompletos.
+05,Orquestador y cuatro especialistas distintos,3,Cumple,V11: orquestador y cuatro contratos diferenciados; ejecución49.,"Control de flujo, estado, reserva y cierre; fallas de tabla y concurrencia delimitadas por separado."
 06,Contrato común mínimo de entrada y salida,3,Cumple,V11: entradas comunes enviadas al modelo y salidas normalizadas verificadas en4roles.,Contratos y referencias persistidos en detalle_json. Duración del paso y costo conservador identificados.
 07,Cálculo verificable y revisión previa,3,Cumple,Validadores; importes calculados por código.,No se aprueba por resultado del modelo únicamente.
 08,Una entrada Telegram publicada y HTTPS,4,Cumple,V11 publicada; V10 y versiones anteriores retiradas.,Un receptor Telegram; API de voz publicada de forma independiente.
@@ -11,33 +11,33 @@ id,requisito,paginas_guia,estado,evidencia,accion_o_limite
 10,Aprobación rechazo versión y vencimiento,4,Cumple,"Casos025,035,024 y049.",Decisiones y bloqueos observados; operaciones simuladas.
 11,Entrada incompleta y rama de error comprensible,4 y 12,Parcial,Banco ejecución44 y repetición corregida94MXN.,Aclaración y errores de modelos comprobados; fallas de tabla no cubiertas integralmente.
 12,Exportación sanitizada y recreación n8n,4 y 13,Parcial,workflow.json y guía de reproducción.,Exportación sin credenciales; importación limpia por un tercero no comprobada.
-13,Panel KPI filtros detalle y estados,5,Cumple,Página y cinco estados comprobados en fixtures de navegador; docs/pruebas_interfaz.md.,"Estados de carga, vacío, error y desactualización presentes; validar visualmente todos."
+13,Panel KPI filtros detalle y estados,5,Cumple,Página y cinco estados comprobados en fixtures de navegador; docs/pruebas_interfaz.md.,Cinco estados controlados comprobados; capturas identificadas como fixtures.
 14,Pruebas 390 y1366 px teclado y foco,5 y 12,Cumple,Capturas390 y1366; foco y filtro con teclado.,Sin desbordamiento observado; no auditoría WCAG completa.
-15,Propósito español saludo consentimiento y derivación,5,Parcial,Configuración y conversaciones ElevenLabs.,Propósito y voz operan; documentar voz concreta y conocimiento suficiente o base independiente.
+15,Propósito español saludo consentimiento y derivación,5,Cumple,"ElevenLabs publicado: español, voz Eric, consentimiento, herramienta y derivación.",Conocimiento en instrucciones y herramienta autorizada; no base vectorial independiente.
 16,Widget y dominios permitidos sin API key HTML,5,Cumple,Host priscouttolenc.github.io y Origin requerido.,"Límites20 llamadas/día, una simultánea, sin ráfagas; publicado."
 17,Herramienta autenticada al mismo registro,5,Cumple,Header Auth y ejecuciones38–39.,Secreto en servicios; respuesta mínima sin datos de usuario.
 18,Voz consulta folio y segunda interacción,5,Cumple,Capturas y dos historiales reales.,Consulta de estado y precio de cuaderno desde Pages.
 19,Micrófono denegado falta de datos y API caída,5 y 12,Parcial,"Folio faltante, inexistente, error404 inducido y recuperación comprobados por texto en widget.",Micrófono denegado sigue sin prueba; Conectando no equivale a rechazo.
-20,Actions valida antes de desplegar,6,Cumple,"Run45947596760: datos, archivos, guardrails, cálculo, contrato y presupuesto.",Publicación depende de validación satisfactoria.
+20,Actions valida antes de desplegar,6,Cumple,Cuatro comprobaciones obligatorias; run45955281874 V11 verificado; cierre documental posterior en Actions.,Publicación depende de validación satisfactoria.
 21,Actions bloqueo falla y recuperación,6,Cumple,"Runs45912705517,45767457393 y45767527740.",Conservar enlaces accesibles y log de despliegue omitido ante falla.
-22,Actualización sanitizada del panel,6,Cumple,Exportación siete casos y run45768070662.,Mecanismo manual declarado; panel no incluye aún el caso049.
+22,Actualización sanitizada del panel,6,Cumple,"web/datos.json: ocho casos de negocio sanitizados, exportación27/11.","Incluye049; excluye pruebas sintéticas. Actualización manual, no datos en vivo."
 23,Dos SKILL.md específicos y uso real,7,Cumple,"Archivos, adaptador y prompts de agentes3–4.",Carga en construcción y contenido incorporado; no lectura remota en cada solicitud.
 24,Ejemplos y reutilización de skills,7,Cumple,"SKILL.md y casos041,044.",Uso repetido y ejemplos presentes; consolidar capturas en índice.
 25,Loop calidad con retorno y V1 aV2,7,Parcial,Caso045; error controlado +10 y corrección.,"Corrección demostrada; documentar responsable, presupuesto y estado de agotamiento íntegros."
 26,Loop seguridad costo registra consumo y revisa límite,7,Parcial,V10: reserva y cierre tras4modelos; bloqueo con presupuesto cero.,Usa cota conservadora cuando no se expone tokenUsage; no facturación conciliada.
 27,Autoevaluación dos skills y dos loops,7,Cumple,"docs/autoevaluacion.md:19,19,18,16.",Autoevaluación técnica con cinco aspectos; ningún rubro menor que3.
-28,Acceso secretos e inyección,8,Parcial,Control servidor; bloqueo Telegram; siete tests locales.,Otra cuenta real aún pendiente; evidencia pública debe omitir identificadores privados.
+28,Acceso secretos e inyección,8,Parcial,Bloqueo Telegram y servidor real ejecución44 con identidad sintética ajena; tests locales.,Sin segunda cuenta física de Telegram; no se presenta como prueba física.
 29,Fuentes permitidas permisos y aprobación humana,8,Cumple,"Catálogo fijo, validadores y comandos.","Sin URLs arbitrarias, código del usuario ni transacciones reales."
 30,Tokens tiempo iteraciones y llamadas,8,Parcial,Límites configurados y bloqueo cero llamadas.,Probar agotamiento en distintas rutas y salida de error; vincular consumo con cada caso.
 31,Fallas reintentos y deduplicación persistente,8,Parcial,Replay real del evento990300001 bloqueado sin modelos; errores de agentes canalizados.,No se garantiza deduplicación concurrente ni recuperación de toda falla de tabla.
-32,Registro por etapa y llamada con campos completos,9–10,Parcial,costos.csv con tokens16 llamadas y voz.,"Completar hora, llamada_id, etapa, caché, unidad, tarifa, estado, reintento y consumo de desarrollo."
+32,Registro por etapa y llamada con campos completos,9–10,Parcial,"costos.csv: llamadas históricas, comparación y V11 con tokens por modelo; voz separada.","Hora individual, caché y cargos no recuperados se dejan vacíos; no equivalen a cero."
 33,Tres casos completos distintos y un error,10,Cumple,"Tres casos cerrados025,035,049:12 llamadas medidas; fallo37 vinculado a048.","Suma de tokens coincide con ejecuciones19,27,42. Costo equivalente público; plataforma se mantiene parcial en otro requisito."
 34,Fórmulas tarifas y cargos conciliados,9–10,Parcial,Tarifa pública y desglose créditos ElevenLabs.,"Falta conciliación Gateway, plataformas, importes incluidos y cargos adicionales."
-35,Proyección100 1000 10000 base y mayor consumo,10,Parcial,Proyecciones lineales de modelo y voz.,"Definir mezcla de rutas, cuotas, costos fijos y escenario de mayor consumo; no extrapolar gratuidad."
+35,Proyección100 1000 10000 base y mayor consumo,10,Parcial,"costos/escenarios.csv:100/1000/10000, mezcla de voz10%/25%, tokens1x/2x.","Base ilustrativa de una ejecución V11; cuotas y costos fijos no conciliados, total facturado no afirmado."
 36,Optimización con costo y calidad antes después,10,Cumple,Tres pares de cotización; seis llamadas con tokens medidos; seis validaciones PASS.,"Costo equivalente observado -16.42%; muestra limitada, sin atribuir ahorro permanente. Ver docs/optimizacion.md."
-37,Matriz P01–P14 con todos los campos y evidencias,12,Parcial,Matriz de23 pruebas.,"Homologar mínimos oficiales y añadir fecha, versión, entrada, obtenido, dictamen y evidencia."
-38,Repositorio ZIP mismo commit y nombre requerido,13,Cumple,Descarga de GitHub contrastada:47 archivos y mismo commit.,El ZIP conserva el commit en su comentario; se verifican los hashes y los tres comandos desde la descarga.
-39,Informe8 a12 páginas sin anexos,13,Cumple,Nuevo informe académico de11 páginas.,"Incluye problema, arquitectura, datos, seguridad, resultados, costos, límites y referencias."
+37,Matriz P01–P14 con todos los campos y evidencias,12,Cumple,tests/pruebas.csv:14 mínimos oficiales relacionados con matriz detallada de45 pruebas.,Los resultados parciales y la falla histórica se conservan; matriz completa no implica todas las pruebas aprobadas.
+38,Repositorio ZIP mismo commit y nombre requerido,13,Parcial,Repositorio actualizado; ZIP previo pertenece a un commit anterior.,Descargar nuevo corte y contrastar todos los hashes antes de entregar.
+39,Informe8 a12 páginas sin anexos,13,Cumple,"Informe académico actualizado V11,11 páginas, renderizado y revisado.","Incluye problema, arquitectura, datos, seguridad, resultados, costos, límites y referencias."
 40,README versiones inicio parada y troubleshooting,11 y 13,Parcial,"Inicio, parada, diagnóstico y versiones observadas documentados.",Reproducción por tercero aún no comprobada.
 41,Configuración ElevenLabs exportable y evidencia,13,Parcial,docs/elevenlabs_configuracion.md y controles publicados.,Configuración documentada; recreación independiente no comprobada.
 42,Índice de evidencias uso IA y licencias,13,Cumple,evidencias/INDICE.md y docs/licencias_uso_ia.md.,"Indica archivos, enlaces y capturas del chat que no se encuentran en el repositorio."
