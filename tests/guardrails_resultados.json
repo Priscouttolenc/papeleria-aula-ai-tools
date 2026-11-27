@@ -1,0 +1,42 @@
+{
+  "fecha": "2026-11-27T01:10:36.494Z",
+  "entorno": "Node.js local; entradas sintéticas; sin Telegram ni escritura de tabla",
+  "origen": "Código exacto Orquestador - Enrutar de export V9",
+  "sha256_codigo": "0ed6543f9b654c7948214e44e30be76175b0e04b2f4e6d43d691e855e11e6cc1",
+  "resultados": [
+    {
+      "prueba": "usuario_no_autorizado",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "evento_ya_guardado",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "solicitud_vacia",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "entrada_excesiva",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "inyeccion_reglas",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "folio_de_otro_usuario",
+      "resultado": "PASS"
+    },
+    {
+      "prueba": "control_positivo",
+      "resultado": "PASS"
+    }
+  ],
+  "limites": [
+    "No es prueba de otra cuenta real en Telegram.",
+    "Deduplicación comprobada contra evento previamente guardado; no prueba concurrencia.",
+    "Vacío y longitud no prueban toda entrada incompleta de negocio.",
+    "No se llamó a modelos ni se modificaron casos."
+  ]
+}
