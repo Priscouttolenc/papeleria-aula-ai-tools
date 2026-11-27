@@ -1,0 +1,5 @@
+# Supuestos de proyección
+
+Base: cuatro cotizaciones con tokens medidos, costo equivalente promedio USD0.004577625 a tarifa pública, no factura Gateway. Mayor uso: el doble de tokens con la misma mezcla de entrada/salida. Voz:10% de casos en base y25% en mayor uso; promedio de dos conversaciones reales,91 segundos y1369.5 créditos por interacción. La columna LLM de voz es una referencia de USD0.0123 por interacción y ya forma parte de sus créditos: no sumar ambos como cargos independientes.
+
+Cuotas y planes no se proyectan como gratuidad ilimitada. No se dispone de tarifas conciliadas de n8n ni conversión vigente de créditos; total_facturado queda vacío. Los límites configurados de20 llamadas de voz diarias y una simultánea son para la demostración, no soportan automáticamente todos los volúmenes de estos escenarios. Proyección financiera parcial, sin pretensión de presupuesto comercial completo. Desarrollo observado no equivale a costo total de construir el proyecto: faltan consumos de etapas anteriores no recuperados.
