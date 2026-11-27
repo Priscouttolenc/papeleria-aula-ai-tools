@@ -36,7 +36,7 @@ id,requisito,paginas_guia,estado,evidencia,accion_o_limite
 35,Proyección100 1000 10000 base y mayor consumo,10,Parcial,Proyecciones lineales de modelo y voz.,"Definir mezcla de rutas, cuotas, costos fijos y escenario de mayor consumo; no extrapolar gratuidad."
 36,Optimización con costo y calidad antes después,10,Pendiente,Reducción de contexto propuesta en reflexión.,Ejecutar comparación reproducible; no presentar ahorro supuesto como medido.
 37,Matriz P01–P14 con todos los campos y evidencias,12,Parcial,Matriz de23 pruebas.,"Homologar mínimos oficiales y añadir fecha, versión, entrada, obtenido, dictamen y evidencia."
-38,Repositorio ZIP mismo commit y nombre requerido,13,Parcial,Repositorio y ZIP local.,Fijar commit final único; sincronizar exactamente y comprobar acceso desde otra sesión.
+38,Repositorio ZIP mismo commit y nombre requerido,13,Cumple,Descarga de GitHub contrastada:47 archivos y mismo commit.,El ZIP conserva el commit en su comentario; se verifican los hashes y los tres comandos desde la descarga.
 39,Informe8 a12 páginas sin anexos,13,Cumple,Nuevo informe académico de11 páginas.,"Incluye problema, arquitectura, datos, seguridad, resultados, costos, límites y referencias."
 40,README versiones inicio parada y troubleshooting,11 y 13,Parcial,"Inicio, parada, diagnóstico y versiones observadas documentados.",Reproducción por tercero aún no comprobada.
 41,Configuración ElevenLabs exportable y evidencia,13,Parcial,docs/elevenlabs_configuracion.md y controles publicados.,Configuración documentada; recreación independiente no comprobada.
