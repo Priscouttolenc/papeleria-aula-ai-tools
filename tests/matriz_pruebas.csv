@@ -1,0 +1,24 @@
+prueba_id,prueba,caso_id,resultado_esperado,estado_evidencia,evidencia,limite
+P01,Telegram /nuevo,AULA-136595025,Cotización de 10 cuadernos y 5 plumas: 390 MXN,VERIFICADO,Captura Telegram y exportación aula_casos,Caso ficticio
+P02,Telegram /estado,AULA-136595025,Recupera estado y total almacenados,VERIFICADO,Capturas /estado antes y después de aprobación,
+P03,Aprobación humana,AULA-136595025,Versión 1 pasa a aprobado_simulado,VERIFICADO,Captura /aprobar y tabla,No ejecuta una compra
+P04,Rechazo humano,AULA-136595035,Versión 1 pasa a rechazado,VERIFICADO,Captura /rechazar y tabla,
+P05,Versión incorrecta,AULA-136595035,Bloquea versión 2 cuando vigente es 1,VERIFICADO,Captura comando versión 2,
+P06,Repetición de decisión,AULA-136595025,Segundo aprobar no repite operación,VERIFICADO,Captura Caso ya cerrado,No demuestra deduplicación concurrente de /nuevo
+P07,Decisión tras rechazo,AULA-136595035,No aprueba caso rechazado,VERIFICADO,Captura Caso ya cerrado: rechazado,
+P08,Vencimiento,AULA-136595024,Bloquea aprobación vencida,VERIFICADO,Captura vencido y exportación,
+P09,Prompt injection,,Bloquea solicitud de revelar secretos,VERIFICADO,Captura Solicitud bloqueada,Prueba puntual; no demuestra inmunidad universal
+P10,Skills reutilizados,AULA-136595041;AULA-136595044,Carga cotización y revisión en dos casos,REPORTADO_POR_USUARIA,Confirmación outputs de skills y respuestas Telegram,Falta incorporar captura de los outputs al repositorio
+P11,Loop calidad V1 a V2,AULA-136595045,Corrige error controlado +10 conservando folio,VERIFICADO,Captura PRUEBA_LOOP y traza de validación,Corrección por reglas; no nueva llamada LLM
+P12,Límite de llamadas,,Con presupuesto 0 bloquea antes del agente,VERIFICADO,Captura error Control llamada 1,Límite de llamadas; aún no límite monetario
+P13,Pages y Actions correcto,,Valida y publica sitio,VERIFICADO,https://github.com/Priscouttolenc/papeleria-aula-ai-tools/actions/runs/45912705517,
+P14,Actions falla y bloquea despliegue,,Datos inválidos impiden publicación,VERIFICADO,https://github.com/Priscouttolenc/papeleria-aula-ai-tools/actions/runs/45767457393,Recuperación: run 45767527740
+P15,ElevenLabs consulta de folio por voz,AULA-136595025,Devuelve aprobado simulado versión 1 total 390,VERIFICADO,Captura voz GitHub Pages e historial ElevenLabs,Conversación production del 26/11/2026
+P16,ElevenLabs catálogo por voz,,Devuelve cuaderno 35 MXN desde herramienta,VERIFICADO,Captura catálogo e historial ElevenLabs,No es creación de otro caso
+P17,Consentimiento antes de voz,,Muestra aviso y cancelar antes de llamada,VERIFICADO,widget_pages_consentimiento.jpg,
+P18,Usuario no autorizado,,Bloquea usuario externo antes de agentes,PENDIENTE,Falta prueba con otra cuenta,Configuración no sustituye evidencia de ejecución
+P19,Deduplicación evento /nuevo,,Mismo evento no crea dos filas,PENDIENTE,Falta repetir el mismo update_id,Enviar otro mensaje igual genera un evento nuevo
+P20,Entrada incompleta o inválida,,Pide aclaración o responde error controlado,PENDIENTE,Falta prueba ejecutada,
+P21,Micrófono denegado o servicio caído,,Presenta alternativa sin inventar respuesta,PENDIENTE,Falta prueba ejecutada,Texto alternativo publicado; comportamiento por comprobar
+P22,Costos y tokens de 3 casos + fallo,,Registro por agente y proyección completa,PARCIAL,costos/costos.csv y costos/proyeccion_voz.csv,Créditos de voz medidos; tokens n8n pendientes
+
