@@ -1,0 +1,7 @@
+caso_id,variante,agente,modelo,tokens_entrada,tokens_salida,tokens_totales,costo_equivalente_usd,total_mxn,calidad,comprobaciones,fuente,fecha,tarifa_entrada_usd_millon,tarifa_salida_usd_millon
+AULA-990200001,antes,cotizacion,gpt-5-mini-2025-08-07,765,799,1564,0.00178925,390,PASS,9,n8n: Papelería Aula — Comparación de contexto,2026-11-26,0.25,2.00
+AULA-990200001,despues,cotizacion,gpt-5-mini-2025-08-07,697,474,1171,0.00112225,390,PASS,9,n8n: Papelería Aula — Comparación de contexto,2026-11-26,0.25,2.00
+AULA-990200002,antes,cotizacion,gpt-5-mini-2025-08-07,767,596,1363,0.00138375,28,PASS,9,n8n: Papelería Aula — Comparación de contexto,2026-11-26,0.25,2.00
+AULA-990200002,despues,cotizacion,gpt-5-mini-2025-08-07,698,590,1288,0.0013545,28,PASS,9,n8n: Papelería Aula — Comparación de contexto,2026-11-26,0.25,2.00
+AULA-990200003,antes,cotizacion,gpt-5-mini-2025-08-07,765,544,1309,0.00127925,150,PASS,9,n8n: Papelería Aula — Comparación de contexto,2026-11-26,0.25,2.00
+AULA-990200003,despues,cotizacion,gpt-5-mini-2025-08-07,697,535,1232,0.00124425,150,PASS,9,n8n: Papelería Aula — Comparación de contexto,2026-11-26,0.25,2.00

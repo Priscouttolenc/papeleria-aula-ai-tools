@@ -1,0 +1,20 @@
+{
+  "modelo": "gpt-5-mini-2025-08-07",
+  "alcance": "solo agente de cotizacion; tres pares",
+  "tokens_entrada_antes": 2297,
+  "tokens_entrada_despues": 2092,
+  "tokens_salida_antes": 1939,
+  "tokens_salida_despues": 1599,
+  "costo_antes_usd": "0.00445225",
+  "costo_despues_usd": "0.00372100",
+  "reduccion_costo_observada_pct": 16.42427985849851,
+  "reduccion_entrada_pct": 8.92468437091859,
+  "calidad": "6 de6 propuestas PASS;9 comprobaciones por propuesta",
+  "variable_modificada": "Omitir catálogo duplicado del mensaje, conservando cálculo autorizado y skill completo",
+  "limites": [
+    "Muestra pequeña de tres pares; el orden no se aleatorizó.",
+    "El costo se estima con tarifa pública a partir de tokens medidos; no es factura Gateway.",
+    "La variación de salida también afecta el costo; no atribuir toda la reducción al recorte de entrada.",
+    "No se evaluó el costo total de los cuatro agentes ni ahorro permanente."
+  ]
+}
