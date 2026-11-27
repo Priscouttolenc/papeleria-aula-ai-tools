@@ -1,0 +1,7 @@
+escenario,casos_mes,multiplicador_llm,proporcion_con_voz,duracion_voz_media_segundos,llm_cotizacion_estimado_usd,voz_creditos_estimados,llm_voz_referencial_usd,total_facturado_usd
+base,100,1,0.10,91,0.4577625,13695,0.123,
+base,1000,1,0.10,91,4.577625,136950,1.23,
+base,10000,1,0.10,91,45.77625,1369500,12.3,
+mayor_uso,100,2,0.25,91,0.915525,34237.5,0.3075,
+mayor_uso,1000,2,0.25,91,9.15525,342375,3.075,
+mayor_uso,10000,2,0.25,91,91.5525,3423750,30.75,
