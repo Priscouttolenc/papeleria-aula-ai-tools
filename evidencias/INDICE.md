@@ -16,3 +16,9 @@
 | Costos | costos/costos.csv | Tokens medidos, créditos observados y estimaciones distinguidas |
 
 Las capturas anteriores que solo existen en el chat no se convierten en archivos por mencionarlas. La matriz indica dónde la evidencia depende de capturas aportadas y dónde existe un archivo o enlace conservado. Los registros privados de n8n requieren acceso de la titular. No publicar claves, conversaciones personales ni identificadores de usuarios.
+
+## Actualización27/11/2026
+
+- optimizacion_comparada.jpg: visualización de los tokens y costos equivalentes recuperados de seis modelos. Es una tabla elaborada a partir de logs; no es la vista nativa de n8n.
+- optimizacion_tokens_despues.jpg: captura nativa del desglose tokenUsage del modelo Después2.
+- interfaz_cargando.jpg, interfaz_vacia.jpg, interfaz_error.jpg, interfaz_desactualizada.jpg e interfaz_sin_resultados.jpg: escenarios controlados de interfaz.
