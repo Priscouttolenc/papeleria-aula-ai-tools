@@ -14,7 +14,7 @@ Proyecto académico de cotizaciones con empresa y precios ficticios. Telegram re
 
 Pedidos y consultas de estado por Telegram, aprobación y rechazo simulados, bloqueo de versión incorrecta y vencimiento. Dos skills incorporados a los prompts. Corrección controlada de total V1 a V2 y límite de llamadas en la versión V9. Widget de ElevenLabs publicado en Pages con consultas autenticadas al mismo registro de casos y al catálogo. Actions registra éxito, falla deliberada que bloqueó el despliegue y recuperación.
 
-El 26 de noviembre se despublicó V6 y se publicó V9 como único receptor de Telegram. La API de voz continúa publicada por separado. Falta verificar un pedido nuevo en producción después del cambio. La exportación workflow.json corresponde a V9 y se entrega inactiva por seguridad.
+El 26 de noviembre se despublicó V6 y se publicó V9 como único receptor de Telegram. La API de voz continúa publicada por separado. La prueba productiva posterior generó AULA-136595049 por $76 MXN y registró su aprobación simulada. La exportación workflow.json corresponde a V9 y se entrega inactiva por seguridad.
 
 ## Datos y costos
 
