@@ -1,0 +1,6 @@
+caso_id,ejecucion_id,tokens_totales,costo_llm_usd_estimado,alcance
+AULA-136595041,33,4547,0.00468050,4 agentes; sin n8n plataforma ni voz
+AULA-136595044,34,4442,0.00447050,4 agentes; sin n8n plataforma ni voz
+AULA-136595045,35,4602,0.00477650,4 agentes; sin n8n plataforma ni voz
+AULA-136595046,36,4400,0.00438300,4 agentes; sin n8n plataforma ni voz
+
