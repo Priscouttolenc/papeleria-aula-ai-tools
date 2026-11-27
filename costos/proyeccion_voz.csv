@@ -1,0 +1,5 @@
+consultas_voz,muestra_conversaciones,promedio_creditos_por_consulta,creditos_estimados,promedio_segundos,minutos_estimados,costo_llm_usd_estimado,costo_total_usd,tipo,limite
+100,2,1369.5,136950.0,91,151.66666666666666,1.23,PENDIENTE,ESTIMACION_LINEAL,Solo voz basada en 2 conversaciones; no equivale a casos completos de 4 agentes; no incluye plataforma USD ni n8n; no aplica tarifa de plan Free a escala
+1000,2,1369.5,1369500.0,91,1516.6666666666667,12.3,PENDIENTE,ESTIMACION_LINEAL,Solo voz basada en 2 conversaciones; no equivale a casos completos de 4 agentes; no incluye plataforma USD ni n8n; no aplica tarifa de plan Free a escala
+10000,2,1369.5,13695000.0,91,15166.666666666666,123.0,PENDIENTE,ESTIMACION_LINEAL,Solo voz basada en 2 conversaciones; no equivale a casos completos de 4 agentes; no incluye plataforma USD ni n8n; no aplica tarifa de plan Free a escala
+
