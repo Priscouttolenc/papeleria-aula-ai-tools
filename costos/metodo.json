@@ -1,0 +1,9 @@
+{
+  "formula": "(tokens_entrada * 0.25 + tokens_salida * 2.00) / 1000000",
+  "tokens": "Medidos desde tokenUsage en logs de los modelos; incluyen completionTokens reportados por proveedor. No estimados a partir de palabras.",
+  "tarifa": "Precio público OpenAI GPT-5-mini consultado 2026-11-26; no prueba facturación exacta de Gateway. Sin descuento caché por no observar desglose.",
+  "voz": "Créditos totales incluyen plataforma y LLM. costo USD en filas ElevenLabs es solo componente LLM mostrado. No sumar créditos a USD ni duplicar componente LLM.",
+  "muestra": "4 ejecuciones completas de cotización; 3 pedidos distintos. No significa tres aprobaciones humanas.",
+  "fallo": "Ejecución 37 bloquea antes del modelo; folio aún no recuperado. Costo plataforma no se presume cero.",
+  "pendiente": "Reconciliar con consumo o facturación n8n Gateway; presupuesto monetario automatizado; completar caso_id del fallo."
+}
