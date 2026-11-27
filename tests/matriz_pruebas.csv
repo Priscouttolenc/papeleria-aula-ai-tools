@@ -16,9 +16,9 @@ P14,Actions falla y bloquea despliegue,,Datos inválidos impiden publicación,VE
 P15,ElevenLabs consulta de folio por voz,AULA-136595025,Devuelve aprobado simulado versión 1 total 390,VERIFICADO,Captura voz GitHub Pages e historial ElevenLabs,Conversación production del 26/11/2026
 P16,ElevenLabs catálogo por voz,,Devuelve cuaderno 35 MXN desde herramienta,VERIFICADO,Captura catálogo e historial ElevenLabs,No es creación de otro caso
 P17,Consentimiento antes de voz,,Muestra aviso y cancelar antes de llamada,VERIFICADO,widget_pages_consentimiento.jpg,
-P18,Usuario no autorizado,,Bloquea usuario externo antes de agentes,PENDIENTE,Falta prueba con otra cuenta,Configuración no sustituye evidencia de ejecución
-P19,Deduplicación evento /nuevo,,Mismo evento no crea dos filas,PENDIENTE,Falta repetir el mismo update_id,Enviar otro mensaje igual genera un evento nuevo
-P20,Entrada incompleta o inválida,,Pide aclaración o responde error controlado,PENDIENTE,Falta prueba ejecutada,
+P18,Usuario no autorizado,,Bloquea usuario externo antes de agentes,VERIFICADO_LOCAL_PENDIENTE_INTEGRACION,tests/guardrails_resultados.json; entradas sintéticas contra código exportado V9,Falta prueba desde otra cuenta real de Telegram; bloqueo lógico local confirmado.
+P19,Deduplicación evento /nuevo,,Mismo evento no crea dos filas,VERIFICADO_LOCAL_PENDIENTE_INTEGRACION,tests/guardrails_resultados.json; entradas sintéticas contra código exportado V9,Evento ya guardado bloqueado localmente; no demuestra concurrencia ni replay completo de Telegram.
+P20,Entrada incompleta o inválida,,Pide aclaración o responde error controlado,VERIFICADO_LOCAL_PENDIENTE_INTEGRACION,tests/guardrails_resultados.json; entradas sintéticas contra código exportado V9,Vacío y exceso de longitud bloqueados localmente; falta aclaración integral de pedido incompleto.
 P21,Micrófono denegado o servicio caído,,Presenta alternativa sin inventar respuesta,PENDIENTE,Falta prueba ejecutada,Texto alternativo publicado; comportamiento por comprobar
-P22,Costos y tokens de 3 casos + fallo,,Registro por agente y proyección completa,PARCIAL,costos/costos.csv y costos/proyeccion_voz.csv,Créditos de voz medidos; tokens n8n pendientes
+P22,Costos y tokens de 3 casos + fallo,,Registro por agente y proyección completa,TOKENS_VERIFICADOS_COSTOS_ESTIMADOS,costos/costos.csv; resumen_casos.csv; proyeccion_casos.csv; metodo.json,4 cotizaciones con tokens medidos y bloqueo previo LLM. Falta folio del fallo y reconciliación con cargos Gateway.
 
