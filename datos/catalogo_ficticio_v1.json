@@ -1,0 +1,56 @@
+{
+  "fuente": "catalogo_ficticio_v1",
+  "datos_ficticios": true,
+  "moneda": "MXN",
+  "productos": [
+    {
+      "sku": "CUA-01",
+      "nombre": "cuaderno",
+      "aliases": [
+        "cuaderno",
+        "cuadernos"
+      ],
+      "precio_mxn": 35
+    },
+    {
+      "sku": "PLU-01",
+      "nombre": "pluma",
+      "aliases": [
+        "pluma",
+        "plumas"
+      ],
+      "precio_mxn": 8
+    },
+    {
+      "sku": "LAP-01",
+      "nombre": "lápiz",
+      "aliases": [
+        "lapiz",
+        "lapices",
+        "lápiz",
+        "lápices"
+      ],
+      "precio_mxn": 6
+    },
+    {
+      "sku": "BOR-01",
+      "nombre": "borrador",
+      "aliases": [
+        "borrador",
+        "borradores",
+        "goma",
+        "gomas"
+      ],
+      "precio_mxn": 5
+    },
+    {
+      "sku": "CAR-01",
+      "nombre": "carpeta",
+      "aliases": [
+        "carpeta",
+        "carpetas"
+      ],
+      "precio_mxn": 20
+    }
+  ]
+}
