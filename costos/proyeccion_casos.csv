@@ -1,0 +1,5 @@
+casos_mes,muestra_casos,promedio_llm_usd_por_caso,llm_usd_mes_estimado,tipo,alcance,exclusiones,fuente_tarifa,fecha_tarifa
+100,4,0.004577625,0.457762500,ESTIMACION_LINEAL,4 agentes GPT-5-mini por caso; tarifa pública sin caché,n8n Gateway cargos reales; plataforma n8n; voz ElevenLabs; reintentos y casos más largos,https://developers.openai.com/api/docs/models/gpt-5-mini,2026-11-26
+1000,4,0.004577625,4.577625000,ESTIMACION_LINEAL,4 agentes GPT-5-mini por caso; tarifa pública sin caché,n8n Gateway cargos reales; plataforma n8n; voz ElevenLabs; reintentos y casos más largos,https://developers.openai.com/api/docs/models/gpt-5-mini,2026-11-26
+10000,4,0.004577625,45.776250000,ESTIMACION_LINEAL,4 agentes GPT-5-mini por caso; tarifa pública sin caché,n8n Gateway cargos reales; plataforma n8n; voz ElevenLabs; reintentos y casos más largos,https://developers.openai.com/api/docs/models/gpt-5-mini,2026-11-26
+
