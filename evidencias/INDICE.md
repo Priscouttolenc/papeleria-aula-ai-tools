@@ -26,3 +26,7 @@ Las capturas anteriores que solo existen en el chat no se convierten en archivos
 ## Errores del asistente y costos de casos cerrados
 
 Ver docs/pruebas_voz_recuperacion.md y docs/costos_casos_completos.md. Capturas:voz_folio_faltante_texto.jpg,voz_folio_inexistente_texto.jpg,voz_servicio_no_disponible_texto.jpg yvoz_servicio_recuperado_texto.jpg. El canal fue texto, con servicio real. Costos por modelo:costos/casos_cerrados.csv ycostos/costos.csv. Capturas nativas de tokenUsage:costos_caso_rechazado_tokens.jpg ycostos_caso_aprobado_tokens.jpg.
+
+## Contratos y replay V11
+
+contratos_cuatro_agentes.jpg:4entradas y4salidas con referencias coincidentes en caso AULA-990300001. deduplicacion_evento_integrada.jpg:repetición del mismo evento bloqueada sin modelos. v11_publicada.jpg:versión publicada. Ver docs/verificacion_v11.md.

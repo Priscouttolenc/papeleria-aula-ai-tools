@@ -4,9 +4,9 @@ id,requisito,paginas_guia,estado,evidencia,accion_o_limite
 03,Tres KPI con fórmula unidad periodo y fuente,2 y 5,Cumple,"Informe, sección 2; web/datos.json.",Métricas de la exportación; no ventas ni ahorro medido.
 04,Datos ficticios y alcance de simulación,1–2 y 8,Cumple,Respuestas Telegram y sitio.,Conexiones reales; operaciones empresariales simuladas.
 05,Orquestador y cuatro especialistas distintos,3,Parcial,Flujos y logs de los cuatro modelos.,Roles operativos; presupuesto y manejo integral de fallas incompletos.
-06,Contrato común mínimo de entrada y salida,3,Parcial,JSON de agentes y validadores.,"Uniformar canal, objetivo, límite de costo, resultado, advertencias, duración y referencia a consumo."
+06,Contrato común mínimo de entrada y salida,3,Cumple,V11: entradas comunes enviadas al modelo y salidas normalizadas verificadas en4roles.,Contratos y referencias persistidos en detalle_json. Duración del paso y costo conservador identificados.
 07,Cálculo verificable y revisión previa,3,Cumple,Validadores; importes calculados por código.,No se aprueba por resultado del modelo únicamente.
-08,Una entrada Telegram publicada y HTTPS,4,Cumple,V10 publicada; V9 y V6 retiradas.,Un receptor; API de voz separada.
+08,Una entrada Telegram publicada y HTTPS,4,Cumple,V11 publicada; V10 y versiones anteriores retiradas.,Un receptor Telegram; API de voz publicada de forma independiente.
 09,Comandos y registro persistente,4,Cumple,Capturas y tabla aula_casos.,"/nuevo, /estado y registro comprobados."
 10,Aprobación rechazo versión y vencimiento,4,Cumple,"Casos025,035,024 y049.",Decisiones y bloqueos observados; operaciones simuladas.
 11,Entrada incompleta y rama de error comprensible,4 y 12,Parcial,Banco ejecución44 y repetición corregida94MXN.,Aclaración y errores de modelos comprobados; fallas de tabla no cubiertas integralmente.
@@ -29,7 +29,7 @@ id,requisito,paginas_guia,estado,evidencia,accion_o_limite
 28,Acceso secretos e inyección,8,Parcial,Control servidor; bloqueo Telegram; siete tests locales.,Otra cuenta real aún pendiente; evidencia pública debe omitir identificadores privados.
 29,Fuentes permitidas permisos y aprobación humana,8,Cumple,"Catálogo fijo, validadores y comandos.","Sin URLs arbitrarias, código del usuario ni transacciones reales."
 30,Tokens tiempo iteraciones y llamadas,8,Parcial,Límites configurados y bloqueo cero llamadas.,Probar agotamiento en distintas rutas y salida de error; vincular consumo con cada caso.
-31,Fallas reintentos y deduplicación persistente,8,Parcial,Evento almacenado bloqueado localmente; decisión repetida bloqueada.,"Falta replay integrado del mismo evento, control de fallas y prueba de concurrencia si se garantiza."
+31,Fallas reintentos y deduplicación persistente,8,Parcial,Replay real del evento990300001 bloqueado sin modelos; errores de agentes canalizados.,No se garantiza deduplicación concurrente ni recuperación de toda falla de tabla.
 32,Registro por etapa y llamada con campos completos,9–10,Parcial,costos.csv con tokens16 llamadas y voz.,"Completar hora, llamada_id, etapa, caché, unidad, tarifa, estado, reintento y consumo de desarrollo."
 33,Tres casos completos distintos y un error,10,Cumple,"Tres casos cerrados025,035,049:12 llamadas medidas; fallo37 vinculado a048.","Suma de tokens coincide con ejecuciones19,27,42. Costo equivalente público; plataforma se mantiene parcial en otro requisito."
 34,Fórmulas tarifas y cargos conciliados,9–10,Parcial,Tarifa pública y desglose créditos ElevenLabs.,"Falta conciliación Gateway, plataformas, importes incluidos y cargos adicionales."

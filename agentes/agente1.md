@@ -8,3 +8,4 @@ Salida: JSON con productos, cantidades, faltantes, advertencias y estado; conser
 
 Modelo observado: gpt-5-mini-2025-08-07 mediante n8n Gateway. Evidencia: ejecuciones 33 a 36, con tokenUsage separado por modelo en costos/costos.csv. Los validadores posteriores comprueban el contrato y detienen salidas inválidas.
 
+V11 utiliza el contrato común de docs/contratos_agentes.md. Los datos específicos permanecen separados por rol; duración y consumo_ref se agregan desde el servidor, no se inventan en la respuesta del modelo.

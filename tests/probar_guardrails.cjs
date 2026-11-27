@@ -17,7 +17,7 @@ const tests=[
 ['control_positivo',()=>{const r=route('/nuevo 2 cuadernos');assert.equal(r.nuevo,true);assert.equal(r.message.text,'2 cuadernos');}],
 ];
 const results=tests.map(([test,fn])=>{try{fn();return {prueba:test,resultado:'PASS'}}catch(e){return {prueba:test,resultado:'FAIL',error:e.message}}});
-const report={fecha:new Date().toISOString(),entorno:'Node.js local; entradas sintéticas; sin Telegram ni escritura de tabla',origen:'Código exacto Orquestador - Enrutar de export V10',sha256_codigo:crypto.createHash('sha256').update(code).digest('hex'),resultados:results,limites:['No es prueba de otra cuenta real en Telegram.','Deduplicación comprobada contra evento previamente guardado; no prueba concurrencia.','Vacío y longitud no prueban toda entrada incompleta de negocio.','No se llamó a modelos ni se modificaron casos.']};
+const report={fecha:new Date().toISOString(),entorno:'Node.js local; entradas sintéticas; sin Telegram ni escritura de tabla',origen:'Código exacto Orquestador - Enrutar de export V11',sha256_codigo:crypto.createHash('sha256').update(code).digest('hex'),resultados:results,limites:['No es prueba de otra cuenta real en Telegram.','Deduplicación comprobada contra evento previamente guardado; no prueba concurrencia.','Vacío y longitud no prueban toda entrada incompleta de negocio.','No se llamó a modelos ni se modificaron casos.']};
 fs.writeFileSync(path.join(__dirname,'guardrails_resultados.json'),JSON.stringify(report,null,2));
 console.log(JSON.stringify(report,null,2));
 if(results.some(x=>x.resultado!=='PASS'))process.exitCode=1;

@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-11-27T05:44:14.494Z",
+  "fecha": "2026-11-27T06:52:39.810Z",
   "entorno": "Node.js local; entradas sintéticas; sin Telegram ni escritura de tabla",
-  "origen": "Código exacto Orquestador - Enrutar de export V10",
+  "origen": "Código exacto Orquestador - Enrutar de export V11",
   "sha256_codigo": "bbba6da459e35c94d08ed8468cb6e7bd8265b58618e1afa0f403552477168f80",
   "resultados": [
     {

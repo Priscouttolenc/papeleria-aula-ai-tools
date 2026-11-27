@@ -21,6 +21,7 @@ jobs:
       - run: node tests/validar_web.cjs
       - run: node tests/probar_guardrails.cjs
       - run: node tests/verificar_proyecto.cjs
+      - run: node tests/contratos_agentes.cjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
