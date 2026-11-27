@@ -1,0 +1,4 @@
+caso_id,version,estado_final,total_mxn,tokens_entrada,tokens_salida,tokens_totales,costo_llm_equivalente_usd,ejecucion_generacion,duracion_generacion_segundos,llamadas_modelo,fuente_cierre,limite
+AULA-136595025,V6,aprobado_simulado,390,1639,2006,3645,0.00442175,19,30.963,4,tabla aula_casos y capturas Telegram de aprobación/rechazo,Cierre simulado; excluye plataforma; muestras de versiones diferentes.
+AULA-136595035,V6,rechazado,28,1636,1979,3615,0.004367,27,28.372,4,tabla aula_casos y capturas Telegram de aprobación/rechazo,Cierre simulado; excluye plataforma; muestras de versiones diferentes.
+AULA-136595049,V9,aprobado_simulado,76,2487,1889,4376,0.00439975,42,26.757,4,tabla aula_casos y capturas Telegram de aprobación/rechazo,Cierre simulado; excluye plataforma; muestras de versiones diferentes.

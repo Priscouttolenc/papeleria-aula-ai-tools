@@ -17,7 +17,7 @@ id,requisito,paginas_guia,estado,evidencia,accion_o_limite
 16,Widget y dominios permitidos sin API key HTML,5,Cumple,Host priscouttolenc.github.io y Origin requerido.,"Límites20 llamadas/día, una simultánea, sin ráfagas; publicado."
 17,Herramienta autenticada al mismo registro,5,Cumple,Header Auth y ejecuciones38–39.,Secreto en servicios; respuesta mínima sin datos de usuario.
 18,Voz consulta folio y segunda interacción,5,Cumple,Capturas y dos historiales reales.,Consulta de estado y precio de cuaderno desde Pages.
-19,Micrófono denegado falta de datos y API caída,5 y 12,Pendiente,Alternativa textual escrita en la web.,Probar los tres escenarios; el texto alternativo no acredita la ejecución.
+19,Micrófono denegado falta de datos y API caída,5 y 12,Parcial,"Folio faltante, inexistente, error404 inducido y recuperación comprobados por texto en widget.",Micrófono denegado sigue sin prueba; Conectando no equivale a rechazo.
 20,Actions valida antes de desplegar,6,Cumple,"Run45947596760: datos, archivos, guardrails, cálculo, contrato y presupuesto.",Publicación depende de validación satisfactoria.
 21,Actions bloqueo falla y recuperación,6,Cumple,"Runs45912705517,45767457393 y45767527740.",Conservar enlaces accesibles y log de despliegue omitido ante falla.
 22,Actualización sanitizada del panel,6,Cumple,Exportación siete casos y run45768070662.,Mecanismo manual declarado; panel no incluye aún el caso049.
@@ -31,7 +31,7 @@ id,requisito,paginas_guia,estado,evidencia,accion_o_limite
 30,Tokens tiempo iteraciones y llamadas,8,Parcial,Límites configurados y bloqueo cero llamadas.,Probar agotamiento en distintas rutas y salida de error; vincular consumo con cada caso.
 31,Fallas reintentos y deduplicación persistente,8,Parcial,Evento almacenado bloqueado localmente; decisión repetida bloqueada.,"Falta replay integrado del mismo evento, control de fallas y prueba de concurrencia si se garantiza."
 32,Registro por etapa y llamada con campos completos,9–10,Parcial,costos.csv con tokens16 llamadas y voz.,"Completar hora, llamada_id, etapa, caché, unidad, tarifa, estado, reintento y consumo de desarrollo."
-33,Tres casos completos distintos y un error,10,Parcial,Cuatro cotizaciones y bloqueo37.,Cotización no equivale a cierre; conciliar tres recorridos completos y folio del fallo.
+33,Tres casos completos distintos y un error,10,Cumple,"Tres casos cerrados025,035,049:12 llamadas medidas; fallo37 vinculado a048.","Suma de tokens coincide con ejecuciones19,27,42. Costo equivalente público; plataforma se mantiene parcial en otro requisito."
 34,Fórmulas tarifas y cargos conciliados,9–10,Parcial,Tarifa pública y desglose créditos ElevenLabs.,"Falta conciliación Gateway, plataformas, importes incluidos y cargos adicionales."
 35,Proyección100 1000 10000 base y mayor consumo,10,Parcial,Proyecciones lineales de modelo y voz.,"Definir mezcla de rutas, cuotas, costos fijos y escenario de mayor consumo; no extrapolar gratuidad."
 36,Optimización con costo y calidad antes después,10,Cumple,Tres pares de cotización; seis llamadas con tokens medidos; seis validaciones PASS.,"Costo equivalente observado -16.42%; muestra limitada, sin atribuir ahorro permanente. Ver docs/optimizacion.md."

@@ -22,3 +22,7 @@ Las capturas anteriores que solo existen en el chat no se convierten en archivos
 - optimizacion_comparada.jpg: visualización de los tokens y costos equivalentes recuperados de seis modelos. Es una tabla elaborada a partir de logs; no es la vista nativa de n8n.
 - optimizacion_tokens_despues.jpg: captura nativa del desglose tokenUsage del modelo Después2.
 - interfaz_cargando.jpg, interfaz_vacia.jpg, interfaz_error.jpg, interfaz_desactualizada.jpg e interfaz_sin_resultados.jpg: escenarios controlados de interfaz.
+
+## Errores del asistente y costos de casos cerrados
+
+Ver docs/pruebas_voz_recuperacion.md y docs/costos_casos_completos.md. Capturas:voz_folio_faltante_texto.jpg,voz_folio_inexistente_texto.jpg,voz_servicio_no_disponible_texto.jpg yvoz_servicio_recuperado_texto.jpg. El canal fue texto, con servicio real. Costos por modelo:costos/casos_cerrados.csv ycostos/costos.csv. Capturas nativas de tokenUsage:costos_caso_rechazado_tokens.jpg ycostos_caso_aprobado_tokens.jpg.
