@@ -1,6 +1,9 @@
-# Loops implementados
+# Loops ejecutables
 
-Calidad: propuesta V1 → validar contrato y cifras → corregir total desde cálculo autorizado → validar V2. Acotado a tres iteraciones y un segundo. Prueba controlada PRUEBA_LOOP con +10 en V1 y mismo caso_id. No corrige folio ni contrato arbitrariamente.
+## Calidad
+Entrada: propuesta, cálculo determinista, caso_id y catálogo. Responsable: Validar cotizacion. Generar V1, comparar cifras y contrato, corregir únicamente el total desde la suma autorizada y volver a validar V2 conservando caso_id. El modo PRUEBA_LOOP introduce +10 MXN en V1 de manera explícita y controlada. Tope: tres iteraciones, un segundo, sin llamadas adicionales a IA. Aceptación: coincidencia exacta de folio, moneda, versión y total. Contrato no reparable o límite agotado: error seguro, sin aprobación. La versión de corrección del loop no modifica la versión comercial que se aprueba por Telegram.
 
-Consumo: verificar límite antes de cada especialista → reservar llamada → ejecutar especialista → propagar contador → verificar siguiente límite. Máximo cuatro llamadas, cuatro etapas diferentes. PRUEBA_LIMITE fija cero y bloquea antes del primer agente. No constituye aún medición y cierre automático por dólares consumidos.
+## Consumo y seguridad
+Entrada: identidad, texto, caso_id y registro acumulado. Responsables: Control llamada N y Registrar consumo N. Verificar acceso y tiempo, comprobar saldo, reservar cota, invocar un especialista, registrar consumo, liberar reserva y volver a comprobar antes del siguiente especialista. Máximo cuatro pasos, justificado por cuatro roles distintos; cero reintentos de modelos, 45 segundos por llamada y 300 segundos para el caso. Presupuesto USD 0.04 por caso. Reserva por paso: (20,000 × 0.25 + 2,048 × 2) / 1,000,000 = USD 0.009096. La cota de entrada es un supuesto conservador; el código restringe el JSON de entrada a 12,000 bytes, pero no incorpora un tokenizador del proveedor. La salida se limita a 2,048 tokens.
 
+Cuando tokenUsage no se expone a los nodos de código, se imputa la cota y se declara estimación; no se inventan tokens. Agotamiento: guardar bloqueado_presupuesto y notificar sin invocar más agentes. Falla de servicio: guardar error_servicio. Resultado de la prueba corregida: cuatro pasos, estimación USD 0.036384, saldo USD 0.003616. Requiere conciliación externa para convertirse en presupuesto de facturación exacto.
