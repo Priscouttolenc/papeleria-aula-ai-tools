@@ -1,7 +1,7 @@
 {
   "fuente": "Exportación manual sanitizada de aula_casos",
-  "periodo": "Casos incluidos en la exportación del estudiante",
-  "actualizado": "2026-11-26T06:24:56.875390+00:00",
+  "periodo": "Ocho casos de negocio seleccionados; se excluyen eventos sintéticos de integración",
+  "actualizado": "2026-11-27T07:14:06.586909+00:00",
   "datos_ficticios": true,
   "casos": [
     {
@@ -45,6 +45,12 @@
       "estado": "pendiente_aprobacion",
       "version": 1,
       "total_mxn": 94.0
+    },
+    {
+      "caso_id": "AULA-136595049",
+      "estado": "aprobado_simulado",
+      "version": 1,
+      "total_mxn": 76.0
     }
   ]
 }

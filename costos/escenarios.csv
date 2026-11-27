@@ -1,7 +1,7 @@
-escenario,casos_mes,multiplicador_llm,proporcion_con_voz,duracion_voz_media_segundos,llm_cotizacion_estimado_usd,voz_creditos_estimados,llm_voz_referencial_usd,total_facturado_usd
-base,100,1,0.10,91,0.4577625,13695,0.123,
-base,1000,1,0.10,91,4.577625,136950,1.23,
-base,10000,1,0.10,91,45.77625,1369500,12.3,
-mayor_uso,100,2,0.25,91,0.915525,34237.5,0.3075,
-mayor_uso,1000,2,0.25,91,9.15525,342375,3.075,
-mayor_uso,10000,2,0.25,91,91.5525,3423750,30.75,
+escenario,casos_mes,multiplicador_llm,proporcion_con_voz,duracion_voz_media_segundos,llm_cotizacion_estimado_usd,voz_creditos_estimados,llm_voz_referencial_usd,total_facturado_usd,base_observada,cota_control_base_usd
+base,100,1,0.10,91,0.48022500,13695,0.123,,Una ejecución V11: AULA-990300001; 4803 tokens; no promedio representativo,3.638400
+base,1000,1,0.10,91,4.80225000,136950,1.23,,Una ejecución V11: AULA-990300001; 4803 tokens; no promedio representativo,36.384000
+base,10000,1,0.10,91,48.02250000,1369500,12.3,,Una ejecución V11: AULA-990300001; 4803 tokens; no promedio representativo,363.840000
+mayor_uso,100,2,0.25,91,0.96045000,34237.5,0.3075,,Una ejecución V11: AULA-990300001; 4803 tokens; no promedio representativo,3.638400
+mayor_uso,1000,2,0.25,91,9.60450000,342375,3.075,,Una ejecución V11: AULA-990300001; 4803 tokens; no promedio representativo,36.384000
+mayor_uso,10000,2,0.25,91,96.04500000,3423750,30.75,,Una ejecución V11: AULA-990300001; 4803 tokens; no promedio representativo,363.840000

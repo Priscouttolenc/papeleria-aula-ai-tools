@@ -9,3 +9,6 @@ Después se volvió a ejecutar el mismo evento, sin cambiar su identificador. El
 Tras la verificación se publicó Papelería Aula — Contratos y trazas V11 y se despublicó V10. La API de voz permanece publicada por separado. La exportación pública se entrega inactiva y sin credenciales ni identificadores privados. Nunca publicar la prueba manual como otro receptor de Telegram.
 
 El control acumulado imputó USD0.036384 como cota conservadora, frente al presupuesto de USD0.04. No fue posible recuperar tokenUsage desde los nodos de código y no se atribuye facturación exacta a esa cota. La duración del contrato mide cada paso entre reserva y registro, no únicamente el trabajo interno del modelo.
+
+
+Actualización documental del 27/11/2026: se recuperó manualmente tokenUsage de los cuatro modelos de la ejecución49. Recepción:349 entrada/414 salida; catálogo:555/626; cotización:786/583; revisión:1055/435. Total:2745 entrada y2058 salida,4803 tokens. Equivalente estimado USD0.00480225 a tarifa pública sin caché. costos.csv conserva por separado costo_imputado_control_usd=0.009096 por llamada. La recuperación manual no modifica la cota del control ni acredita una factura Gateway.

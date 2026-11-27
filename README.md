@@ -18,7 +18,7 @@ Cuatro agentes con objetivos, datos y resultados distintos; contratos comunes ef
 
 Comandos: `/nuevo Necesito 10 cuadernos y 5 plumas`, `/estado AULA-FOLIO`, `/aprobar AULA-FOLIO 1`, `/rechazar AULA-FOLIO 1`. Sustituir el folio por el devuelto. Propietario, versión, vigencia y cierre previo se validan.
 
-El panel usa una exportación estática sanitizada de siete casos, con fecha y fuente; no es un registro en vivo. El asistente sí consulta la herramienta autenticada en n8n. Hay evidencia previa de dos consultas por voz y pruebas adicionales por texto de folio faltante, inexistente, error404 inducido y recuperación. Se verificaron vistas390/1366 y estados controlados de interfaz. El rechazo de micrófono y otra cuenta real de Telegram siguen sin acreditarse.
+El panel usa una exportación estática sanitizada de ocho casos, con fecha y fuente; no es un registro en vivo. El asistente sí consulta la herramienta autenticada en n8n. Hay evidencia previa de dos consultas por voz y pruebas adicionales por texto de folio faltante, inexistente, error404 inducido y recuperación. Se verificaron vistas390/1366 y estados controlados de interfaz. El rechazo de micrófono y otra cuenta real de Telegram siguen sin acreditarse.
 
 Tokens de tres casos cerrados y otras pruebas recuperados de logs. Costos equivalentes calculados con tarifa pública; plataforma y facturación Gateway no conciliadas. La optimización medida del agente de cotización es una muestra de tres pares, no ahorro garantizado del sistema completo.
 
@@ -37,4 +37,4 @@ Actions exige estas verificaciones antes de desplegar Pages. Existen ejecuciones
 
 ## Entrega y límites
 
-La exportación n8n/workflow.json está inactiva, sin credenciales ni identificadores privados. Configurar usuario autorizado, tabla y credenciales personales al importar. No publicar archivos privados Papeleria_Aula_*.json de construcción. Los PDF y ZIP previos son cortes documentales; consultar las actualizaciones de docs/ y la matriz. Video y defensa individual pendientes. No se certifica una calificación.
+La exportación n8n/workflow.json está inactiva, sin credenciales ni identificadores privados. Configurar usuario autorizado, tabla y credenciales personales al importar. No publicar archivos privados Papeleria_Aula_*.json de construcción. El informe académico actualizado está en docs/Informe_Papeleria_Aula_Academico.pdf (11 páginas). tests/pruebas.csv relaciona las 14 pruebas de la guía con la matriz detallada de 45 registros. Otros PDF y el ZIP anterior son cortes documentales pendientes de reconciliar. Video y defensa individual pendientes. No se certifica una calificación.
