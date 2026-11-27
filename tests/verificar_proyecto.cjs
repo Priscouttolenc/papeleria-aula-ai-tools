@@ -1,0 +1,20 @@
+const fs=require('node:fs'),assert=require('node:assert/strict'),vm=require('node:vm');
+for(const p of ['README.md','.env.example','agentes/agente1.md','agentes/agente2.md','agentes/agente3.md','agentes/agente4.md','agentes/orquestador.md','skills/aula-cotizacion/SKILL.md','skills/aula-revision/SKILL.md','loops/descripcion.md','costos/costos.csv','docs/reproduccion.md','n8n/voz_workflow.json'])assert(fs.existsSync(p),'Falta '+p);
+const w=JSON.parse(fs.readFileSync('n8n/workflow.json','utf8'));const node=name=>w.nodes.find(n=>n.name===name);
+assert(w.nodes.every(n=>!n.credentials&&!n.webhookId),'Credencial en exportación pública');
+assert.equal(w.nodes.filter(n=>n.type==='n8n-nodes-base.telegramTrigger').length,1);
+const calc=new Function('$input',node('Calcular importes').parameters.jsCode);
+const execute=products=>calc({first:()=>({json:{caso_id:'AULA-123',modo:'SIMULADO',catalogo:{estado:'validado',productos:products}}})})[0].json;
+const b=execute([{precio_mxn:35,cantidad:10},{precio_mxn:8,cantidad:5}]);assert.equal(b.calculo.total_mxn,390);
+assert.equal(execute([{precio_mxn:6,cantidad:3},{precio_mxn:5,cantidad:2}]).calculo.total_mxn,28);
+assert.throws(()=>execute([{precio_mxn:35,cantidad:1000}]),/fuera de límite/);
+const quality=new Function('$','$input',node('Validar cotizacion').parameters.jsCode);
+const proposal={caso_id:b.caso_id,agente:'cotizacion',modo:'SIMULADO',moneda:'MXN',version:1,estado:'pendiente_revision',resumen:'Prueba controlada',supuestos:['Precios ficticios'],total_mxn:390};
+const runQuality=p=>quality(n=>({first:()=>({json:n==='Calcular importes'?b:{message:{text:'[PRUEBA_LOOP] 10 cuadernos y 5 plumas'}}})}),{first:()=>({json:{output:JSON.stringify(p)}})})[0].json;
+const q=runQuality(proposal);assert.equal(q.loop_calidad.traza.length,2);assert.equal(q.loop_calidad.traza[0].total_propuesto,400);assert.equal(q.loop_calidad.traza[1].total_propuesto,390);assert(q.loop_calidad.traza.every(x=>x.caso_id===b.caso_id));assert.throws(()=>runQuality({...proposal,caso_id:'AULA-OTRO'}),/folio inválido/);
+const control=node('Control llamada 1').parameters.jsCode;const allowed=node('Telegram Trigger').parameters.additionalFields.userIds;
+const controlRun=text=>vm.runInNewContext('(function(){'+control+'})()',{$input:{first:()=>({json:b})},$:n=>({first:()=>({json:n==='Edit Fields'?b:{message:{text,from:{id:allowed}}}})}),$execution:{id:'local-test'},Buffer,Date});
+assert.throws(()=>controlRun('[PRUEBA_PRESUPUESTO] 2 plumas'),/PRESUPUESTO_AGOTADO/);
+const c=controlRun('/nuevo 2 plumas')[0].json.control_consumo;assert.equal(c.llamadas,1);assert(c.reservado_usd<c.presupuesto_usd);
+for(let i=1;i<=4;i++){assert.equal(node('Control llamada '+i).onError,'continueErrorOutput');assert.equal(node('Registrar consumo '+i).onError,'continueErrorOutput');}
+console.log('Archivos, privacidad, cálculo, límite, corrección V1/V2 y reserva de presupuesto: PASS. Pruebas locales sin llamadas a proveedores.');
