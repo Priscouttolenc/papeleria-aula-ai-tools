@@ -21,4 +21,5 @@ P19,Deduplicación evento /nuevo,,Mismo evento no crea dos filas,VERIFICADO_LOCA
 P20,Entrada incompleta o inválida,,Pide aclaración o responde error controlado,VERIFICADO_LOCAL_PENDIENTE_INTEGRACION,tests/guardrails_resultados.json; entradas sintéticas contra código exportado V9,Vacío y exceso de longitud bloqueados localmente; falta aclaración integral de pedido incompleto.
 P21,Micrófono denegado o servicio caído,,Presenta alternativa sin inventar respuesta,PENDIENTE,Falta prueba ejecutada,Texto alternativo publicado; comportamiento por comprobar
 P22,Costos y tokens de 3 casos + fallo,,Registro por agente y proyección completa,TOKENS_VERIFICADOS_COSTOS_ESTIMADOS,costos/costos.csv; resumen_casos.csv; proyeccion_casos.csv; metodo.json,4 cotizaciones con tokens medidos y bloqueo previo LLM. Falta folio del fallo y reconciliación con cargos Gateway.
+P23,V9 publicada pedido y aprobación,AULA-136595049,Cotiza $76 y registra aprobado_simulado sin Execute manual,VERIFICADO_CAPTURAS_USUARIA,evidencias/telegram_v9_pedido.png; evidencias/telegram_v9_aprobacion.png,Integración comprobada por capturas; no implica que todos los controles pendientes estén cerrados
 
