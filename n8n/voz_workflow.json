@@ -1,0 +1,111 @@
+{
+  "name": "Papelería Aula — API de voz autenticada",
+  "nodes": [
+    {
+      "name": "Entrada voz autenticada",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "voz-webhook",
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "aula-voz-consulta-v1",
+        "authentication": "headerAuth",
+        "responseMode": "responseNode",
+        "options": {}
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "TABLA_AULA_CASOS",
+          "mode": "list",
+          "cachedResultName": "aula_casos",
+          "cachedResultUrl": "/projects/PROYECTO_N8N/datatables/TABLA_AULA_CASOS"
+        },
+        "returnAll": true
+      },
+      "name": "Leer registro",
+      "id": "voz-leer",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        260,
+        0
+      ],
+      "alwaysOutputData": true
+    },
+    {
+      "name": "Respuesta minima",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "id": "voz-respuesta",
+      "position": [
+        520,
+        0
+      ],
+      "parameters": {
+        "jsCode": "const body=$('Entrada voz autenticada').first().json.body||{};\nconst accion=String(body.accion||'consultar_estado');\nif(accion==='consultar_catalogo') return [{json:{modo:'SIMULADO',fuente:'catalogo_ficticio_v1',moneda:'MXN',precios:{cuaderno:35,pluma:8,lapiz:6,borrador:5,carpeta:20},nota:'Precios ficticios por pieza; no se realizan compras.'}}];\nconst folio=String(body.caso_id||'').trim().toUpperCase();\nif(accion!=='consultar_estado'||!/^AULA-\\d{1,20}$/.test(folio)) return [{json:{ok:false,error:'Indica un folio AULA seguido de numeros. Solo se permiten consultas.'}}];\nconst row=$input.all().map(i=>i.json).find(r=>r.caso_id===folio);\nif(!row) return [{json:{ok:false,caso_id:folio,error:'Caso no encontrado. No inventes un resultado.'}}];\nreturn [{json:{ok:true,modo:'SIMULADO',caso_id:row.caso_id,estado:row.estado,version:row.version,total_mxn:row.total_mxn,fuente:'aula_casos',consultado_en:new Date().toISOString(),nota:'Estado almacenado. Las decisiones se registran solo mediante Telegram autorizado.'}}];"
+      }
+    },
+    {
+      "name": "Responder a ElevenLabs",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "id": "voz-fin",
+      "position": [
+        780,
+        0
+      ],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Entrada voz autenticada": {
+      "main": [
+        [
+          {
+            "node": "Leer registro",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Leer registro": {
+      "main": [
+        [
+          {
+            "node": "Respuesta minima",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Respuesta minima": {
+      "main": [
+        [
+          {
+            "node": "Responder a ElevenLabs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false
+}
